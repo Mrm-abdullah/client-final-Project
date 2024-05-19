@@ -8,6 +8,12 @@
   4. goto ---- https://console.firebase.google.com
   5. goto ---- https://vitejs.dev/guide/env-and-mode.html
   6. goto ---- https://reactrouter.com/en/main/hooks/use-location
+  7. goto ---- https://github.com/brillout/awesome-react-components
+  *            react-responsive-carousel
+  *               npm install react-responsive-carousel --save
+  *            swiper
+  *               https://swiperjs.com/demos#centered
+  *               npm i swiper
   7. goto ---- https://axios-http.com/docs/post_example
   8. goto ---- https://axios-http.com/docs/api_intro
   8. goto ---- https://axios-http.com/docs/interceptors
@@ -15,6 +21,8 @@
 
 
   .eslintrc.cjs ---  rules: {'react/prop-types': 'off', }
+
+  
   -----------------
   Page folder file setup
   -----------------
@@ -34,6 +42,9 @@
 
   * Providers
   *  >AauthProviders
+      <AauthProviders> // main
+        <RouterProvider router={router} />
+      </AauthProviders>
 
   * Pages
   *  >Home
@@ -108,5 +119,5 @@
 
   * https://vercel.com/docs/cli
 
-  server link:
-  https://server-doctor-practice.vercel.app/
+  Live link:
+  waiting
