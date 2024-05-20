@@ -6,7 +6,9 @@
   2. goto ---- https://tailwindcss.com/docs/guides/vite
   3. goto ---- https://daisyui.com/docs/install
   4. goto ---- https://console.firebase.google.com
-  5. goto ---- https://vitejs.dev/guide/env-and-mode.html
+  5. goto ---- https://www.npmjs.com/package/dotenv
+  5. to ---- https://vitejs.dev/guide/env-and-mode.html
+  6. goto ---- https://github.com/smastrom/   // rating
   6. goto ---- https://reactrouter.com/en/main/hooks/use-location
   7. goto ---- https://github.com/brillout/awesome-react-components
   *            react-responsive-carousel
@@ -14,6 +16,9 @@
   *            swiper
   *               https://swiperjs.com/demos#centered
   *               npm i swiper
+  *             react-rating
+  *               npm i @smastrom/react-rating
+  *               https://reactrating.netlify.app
   7. goto ---- https://axios-http.com/docs/post_example
   8. goto ---- https://axios-http.com/docs/api_intro
   8. goto ---- https://axios-http.com/docs/interceptors
