@@ -6,10 +6,9 @@
   2. goto ---- https://tailwindcss.com/docs/guides/vite
   3. goto ---- https://daisyui.com/docs/install
   4. goto ---- https://console.firebase.google.com
-  5. goto ---- https://www.npmjs.com/package/dotenv
   5. to ---- https://vitejs.dev/guide/env-and-mode.html
   6. goto ---- https://github.com/smastrom/   // rating
-  6. goto ---- https://reactrouter.com/en/main/hooks/use-location
+  6. goto ---- https://reactrouter.com/en/main/hooks/use-location // location
   7. goto ---- https://github.com/brillout/awesome-react-components
   *            react-responsive-carousel
   *               npm install react-responsive-carousel --save
@@ -19,6 +18,10 @@
   *             react-rating
   *               npm i @smastrom/react-rating
   *               https://reactrating.netlify.app
+  7. goto ---- https://www.npmjs.com/package/react-helmet-async  // helmet
+  7. goto ---- https://www.npmjs.com/package/react-parallax  // react-parallax
+  7. goto ---- https://www.npmjs.com/package/react-tabs  // react-tabs
+  7. goto ---- https://www.npmjs.com/package/react-simple-captcha // captcha
   7. goto ---- https://axios-http.com/docs/post_example
   8. goto ---- https://axios-http.com/docs/api_intro
   8. goto ---- https://axios-http.com/docs/interceptors
@@ -96,6 +99,7 @@
 
   4. goto ---- https://cloud.mongodb.com/v2/6623bee6440aa14866eca3c7#/clusters/connect?clusterId=Cluster0
   5. goto ---- https://www.npmjs.com/package/dotenv
+  9. goto ---- https://www.npmjs.com/package/cors
   6. goto ---- https://www.mongodb.com/docs/drivers/node/current/usage-examples/find
 
 
@@ -104,7 +108,6 @@
   -----------------
   7. goto ---- https://github.com/auth0/node-jsonwebtoken
   8. goto ---- https://expressjs.com/en/resources/middleware/cookie-parser.html
-  9. goto ---- https://www.npmjs.com/package/cors
   10. goto ---- 7 no verify token
   11. goto ---- 
   12. goto ---- 

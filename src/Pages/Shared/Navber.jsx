@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 
 
@@ -11,7 +11,7 @@ const Navber = () => {
                 // Sign-out successful.
             })
             .catch((error) => {
-                // console.log('logout error', error);
+                console.log('logout error', error);
             });
     }
 
