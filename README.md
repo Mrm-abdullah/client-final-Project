@@ -22,6 +22,9 @@
   7. goto ---- https://www.npmjs.com/package/react-parallax  // react-parallax
   7. goto ---- https://www.npmjs.com/package/react-tabs  // react-tabs
   7. goto ---- https://www.npmjs.com/package/react-simple-captcha // captcha
+  7. goto ---- https://react-hook-form.com/ // hook form 
+  *            https://www.npmjs.com/package/react-hook-form // hook form 
+  7. goto ---- https://www.npmjs.com/package/sweetalert // sweet aleart
   7. goto ---- https://axios-http.com/docs/post_example
   8. goto ---- https://axios-http.com/docs/api_intro
   8. goto ---- https://axios-http.com/docs/interceptors

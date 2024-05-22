@@ -1,12 +1,18 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 import { Helmet } from "react-helmet-async";
 import { useEffect, useState } from "react";
+import swal from "sweetalert";
 import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
 
 const Login = () => {
     const [disabled, setDisabled] = useState(true);
     const { handleLoginUser } = useAuth()
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || "/";
+
 
 
     useEffect(() => {
@@ -23,16 +29,15 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
-                // Swal.fire({
-                //     title: 'User Login Successful.',
-                //     showClass: {
-                //         popup: 'animate__animated animate__fadeInDown'
-                //     },
-                //     hideClass: {
-                //         popup: 'animate__animated animate__fadeOutUp'
-                //     }
-                // });
-                // navigate(from, { replace: true });
+                swal({
+                    title: 'User Login Successful.',
+                    showClass: {
+                        popup: 'animate__animated animate__fadeInDown'
+                    },
+                    hideClass: {
+                        popup: 'animate__animated animate__fadeOutUp'
+                    }
+                });
             })
     }
 
