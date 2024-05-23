@@ -2,7 +2,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 import { Helmet } from "react-helmet-async";
 import { useEffect, useState } from "react";
-import swal from "sweetalert";
+import Swal from "sweetalert2";
 import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
 
 const Login = () => {
@@ -29,7 +29,7 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
-                swal({
+                Swal.fire({
                     title: 'User Login Successful.',
                     showClass: {
                         popup: 'animate__animated animate__fadeInDown'
@@ -38,6 +38,7 @@ const Login = () => {
                         popup: 'animate__animated animate__fadeOutUp'
                     }
                 });
+                navigate(from, { replace: true });
             })
     }
 

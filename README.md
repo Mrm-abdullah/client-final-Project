@@ -24,7 +24,9 @@
   7. goto ---- https://www.npmjs.com/package/react-simple-captcha // captcha
   7. goto ---- https://react-hook-form.com/ // hook form 
   *            https://www.npmjs.com/package/react-hook-form // hook form 
-  7. goto ---- https://www.npmjs.com/package/sweetalert // sweet aleart
+  7. goto ---- https://sweetalert2.github.io/#download // sweet aleart
+  7. goto ---- https://www.npmjs.com/package/react-icons // icons
+  *            https://react-icons.github.io/react-icons
   7. goto ---- https://axios-http.com/docs/post_example
   8. goto ---- https://axios-http.com/docs/api_intro
   8. goto ---- https://axios-http.com/docs/interceptors

@@ -1,12 +1,15 @@
 import { Helmet } from "react-helmet-async";
 import useAuth from "../../Hooks/useAuth";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from 'react-hook-form';
+import Swal from "sweetalert2";
+
 
 
 const Register = () => {
-    const { handleCreateUser } = useAuth();
-    const { register, handleSubmit, formState: { errors }, } = useForm();
+    const { handleCreateUser, updateUserProfile } = useAuth();
+    const { register, reset, handleSubmit, formState: { errors }, } = useForm();
+    const navigate = useNavigate();
 
     const onSubmit = data => {
         console.log(data);
@@ -14,21 +17,21 @@ const Register = () => {
             .then(result => {
                 const loggedUser = result.user;
                 console.log(loggedUser);
-                // updateUserProfile(data.name, data.photoURL)
-                //     .then(() => {
-                //         console.log('user profile info updated')
-                //         reset();
-                //         Swal.fire({
-                //             position: 'top-end',
-                //             icon: 'success',
-                //             title: 'User created successfully.',
-                //             showConfirmButton: false,
-                //             timer: 1500
-                //         });
-                //         navigate('/');
+                updateUserProfile(data.name, data.photoURL)
+                    .then(() => {
+                        console.log('user profile info updated')
+                        reset();
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'User created successfully.',
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                        navigate('/');
 
-                //     })
-                //     .catch(error => console.log(error))
+                    })
+                    .catch(error => console.log(error))
             })
     };
 
