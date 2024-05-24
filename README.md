@@ -27,7 +27,8 @@
   7. goto ---- https://sweetalert2.github.io/#download // sweet aleart
   7. goto ---- https://www.npmjs.com/package/react-icons // icons
   *            https://react-icons.github.io/react-icons
-  7. goto ---- https://axios-http.com/docs/post_example
+  7. goto ---- https://axios-http.com/docs/post_example // axios
+  7. goto ---- https://tanstack.com/query/latest/docs/framework/react/installation // tanstack
   8. goto ---- https://axios-http.com/docs/api_intro
   8. goto ---- https://axios-http.com/docs/interceptors
   8. goto ---- 
