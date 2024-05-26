@@ -8,7 +8,11 @@ import Menu from "../Pages/Menu/Menu";
 import Order from "../Pages/Order/Order";
 import Secret from "../Pages/Secret/Secret";
 import PrivateRoutes  from "./PrivateRoutes";
+import AdminRoute  from "./AdminRoute";
 import Cart from "../Pages/Dashboard/Cart/Cart";
+import AddItems from "../Pages/Dashboard/AddItems/AddItems";
+import ManageItems from "../Pages/Dashboard/ManageItems/ManageItems";
+import UpdateItem from "../Pages/Dashboard/UpdateItem/UpdateItem";
 import Dashboard from "../Layout/Dashboard";
 import AllUsers from "../Pages/Dashboard/AllUsers/AllUsers";
 
@@ -53,10 +57,23 @@ export const router = createBrowserRouter([
           element: <Cart></Cart>
         },
 
-        // admin routes
+        // admin only routes
+        {
+          path: 'addItems',
+          element: <AdminRoute> <AddItems></AddItems> </AdminRoute>
+        },
+        {
+          path: 'manageItems',
+          element: <AdminRoute><ManageItems></ManageItems></AdminRoute>
+        },
+        {
+          path: 'updateItem/:id',
+          element: <AdminRoute><UpdateItem></UpdateItem></AdminRoute>,
+          loader: ({params}) => fetch(`http://localhost:5000/menu/${params.id}`)
+        },
         {
           path: 'users',
-          element: <AllUsers></AllUsers>
+          element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
         }
 
       ]
