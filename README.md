@@ -28,9 +28,11 @@
   7. goto ---- https://www.npmjs.com/package/react-icons // icons
   *            https://react-icons.github.io/react-icons
   7. goto ---- https://axios-http.com/docs/post_example // axios
+  *            https://axios-http.com/docs/api_intro
+  *            https://axios-http.com/docs/interceptors
   7. goto ---- https://tanstack.com/query/latest/docs/framework/react/installation // tanstack
-  8. goto ---- https://axios-http.com/docs/api_intro
-  8. goto ---- https://axios-http.com/docs/interceptors
+  8. goto ---- 
+  8. goto ---- 
   8. goto ---- 
 
 
@@ -112,7 +114,8 @@
   -----------------
   jwt setup
   -----------------
-  7. goto ---- https://github.com/auth0/node-jsonwebtoken
+  8. goto ---- https://jwt.io/libraries?language=Node.js // jwt
+  *            https://github.com/auth0/node-jsonwebtoken
   8. goto ---- https://expressjs.com/en/resources/middleware/cookie-parser.html
   10. goto ---- 7 no verify token
   11. goto ---- 

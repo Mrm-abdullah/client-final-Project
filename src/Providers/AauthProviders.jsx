@@ -1,6 +1,7 @@
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut, updateProfile } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import app from "../firebase/firebase.config";
+import useAxiosPublic from "../Hooks/useAxiosPublic";
 
 export const AuthContext = createContext();
 const auth = getAuth(app);
@@ -8,16 +9,33 @@ const auth = getAuth(app);
 const AauthProviders = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
+    const googleProvider = new GoogleAuthProvider();
+    const axiosPublic = useAxiosPublic();
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser)
+            console.log(currentUser);
+            if (currentUser) {
+                // get token and store client
+                const userInfo = { email: currentUser.email };
+                axiosPublic.post('/jwt', userInfo)
+                    .then(res => {
+                        if (res.data.token) {
+                            localStorage.setItem('access-token', res.data.token);
+                        }
+                    })
+            }
+            else {
+                // TODO: remove token (if token stored in the client side: Local storage, caching, in memory)
+                localStorage.removeItem('access-token');
+            }
             setLoading(false)
         })
         return () => {
             return unsubscribe();
         }
-    }, [])
+    }, [axiosPublic])
 
     const handleCreateUser = (email, password) => {
         setLoading(true)
@@ -26,6 +44,10 @@ const AauthProviders = ({ children }) => {
     const handleLoginUser = (email, password) => {
         setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
+    }
+    const handleGoogleLogIn = () => {
+        setLoading(true);
+        return signInWithPopup(auth, googleProvider);
     }
     const handleLogoutUser = () => {
         setLoading(true)
@@ -42,6 +64,7 @@ const AauthProviders = ({ children }) => {
         loading,
         handleCreateUser,
         handleLoginUser,
+        handleGoogleLogIn,
         handleLogoutUser,
         updateUserProfile
     }
