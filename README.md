@@ -121,17 +121,28 @@
   11. goto ---- 
   12. goto ---- 
 
+  -------------------
+  stripe js react client
+  --------------------------
+
+  11. goto ---- https://github.com/stripe/react-stripe-js
+  *             https://docs.stripe.com/stripe-js/react
+  *             npm install --save @stripe/react-stripe-js @stripe/stripe-js
+        // server
+  11. goto ---- https://docs.stripe.com/payments/quickstart
+  *             https://docs.stripe.com/payments/payment-intents/verifying-status#checking-status-retrieve
+  *             npm install --save stripe
+  *             
+
 
 
   * secret key genarate
   require('crypto').randomBytes(64).toString('hex')
 
 
-
   -------------------
   Server Deployment steps
   --------------------------
-
   *  https://github.com/ferdouszihad/car-doctor-deployment
 
   * https://vercel.com/docs/cli
