@@ -2,14 +2,16 @@
   setup client site
   -----------------
 
+  .eslintrc.cjs ---  rules: {'react/prop-types': 'off', }
+
   1. goto ---- https://reactrouter.com
   2. goto ---- https://tailwindcss.com/docs/guides/vite
   3. goto ---- https://daisyui.com/docs/install
   4. goto ---- https://console.firebase.google.com
   5. to ---- https://vitejs.dev/guide/env-and-mode.html
   6. goto ---- https://github.com/smastrom/   // rating
-  6. goto ---- https://reactrouter.com/en/main/hooks/use-location // location
-  7. goto ---- https://github.com/brillout/awesome-react-components
+  7. goto ---- https://reactrouter.com/en/main/hooks/use-location // location
+  8. goto ---- https://github.com/brillout/awesome-react-components
   *            react-responsive-carousel
   *               npm install react-responsive-carousel --save
   *            swiper
@@ -18,29 +20,29 @@
   *             react-rating
   *               npm i @smastrom/react-rating
   *               https://reactrating.netlify.app
-  7. goto ---- https://www.npmjs.com/package/react-helmet-async  // helmet
-  7. goto ---- https://www.npmjs.com/package/react-parallax  // react-parallax
-  7. goto ---- https://www.npmjs.com/package/react-tabs  // react-tabs
-  7. goto ---- https://www.npmjs.com/package/react-simple-captcha // captcha
-  7. goto ---- https://react-hook-form.com/ // hook form 
+  9. goto ---- https://www.npmjs.com/package/react-helmet-async  // helmet
+  10. goto ---- https://www.npmjs.com/package/react-parallax  // react-parallax
+  11. goto ---- https://www.npmjs.com/package/react-tabs  // react-tabs
+  12. goto ---- https://www.npmjs.com/package/react-simple-captcha // captcha
+  13. goto ---- https://react-hook-form.com/ // hook form 
   *            https://www.npmjs.com/package/react-hook-form // hook form 
-  7. goto ---- https://sweetalert2.github.io/#download // sweet aleart
-  7. goto ---- https://www.npmjs.com/package/react-icons // icons
+  14. goto ---- https://sweetalert2.github.io/#download // sweet aleart
+  15. goto ---- https://www.npmjs.com/package/react-icons // icons
   *            https://react-icons.github.io/react-icons
-  7. goto ---- https://axios-http.com/docs/post_example // axios
+  16. goto ---- https://axios-http.com/docs/post_example // axios
   *            https://axios-http.com/docs/api_intro
   *            https://axios-http.com/docs/interceptors
-  7. goto ---- https://tanstack.com/query/latest/docs/framework/react/installation // tanstack
-  8. goto ---- 
-  8. goto ---- 
-  8. goto ---- 
-
-
-  .eslintrc.cjs ---  rules: {'react/prop-types': 'off', }
-
+  17. goto ---- https://tanstack.com/query/latest/docs/framework/react/installation // tanstack
+  18. goto ---- https://recharts.org/en-US/guide // chart
+  *            https://recharts.org/en-US/examples/CustomShapeBarChart
   
+  19. goto ---- 
+
+
+
+<!--   
   -----------------
-  Page folder file setup
+  Page folder file setup 
   -----------------
   * Layout
   *  >Main
@@ -73,12 +75,7 @@
   *  >Register
   *   >>Register
   *  >Login
-  *   >>Login
-
-
-
-
-
+  *   >>Login -->
 
 
 
@@ -107,8 +104,8 @@
 
   4. goto ---- https://cloud.mongodb.com/v2/6623bee6440aa14866eca3c7#/clusters/connect?clusterId=Cluster0
   5. goto ---- https://www.npmjs.com/package/dotenv
-  9. goto ---- https://www.npmjs.com/package/cors
-  6. goto ---- https://www.mongodb.com/docs/drivers/node/current/usage-examples/find
+  6. goto ---- https://www.npmjs.com/package/cors
+  7. goto ---- https://www.mongodb.com/docs/drivers/node/current/usage-examples/find
 
 
   -----------------
@@ -116,7 +113,7 @@
   -----------------
   8. goto ---- https://jwt.io/libraries?language=Node.js // jwt
   *            https://github.com/auth0/node-jsonwebtoken
-  8. goto ---- https://expressjs.com/en/resources/middleware/cookie-parser.html
+  9. goto ---- https://expressjs.com/en/resources/middleware/cookie-parser.html
   10. goto ---- 7 no verify token
   11. goto ---- 
   12. goto ---- 
@@ -125,11 +122,11 @@
   stripe js react client
   --------------------------
 
-  11. goto ---- https://github.com/stripe/react-stripe-js
+  13. goto ---- https://github.com/stripe/react-stripe-js
   *             https://docs.stripe.com/stripe-js/react
   *             npm install --save @stripe/react-stripe-js @stripe/stripe-js
         // server
-  11. goto ---- https://docs.stripe.com/payments/quickstart
+  14. goto ---- https://docs.stripe.com/payments/quickstart
   *             https://docs.stripe.com/payments/payment-intents/verifying-status#checking-status-retrieve
   *             npm install --save stripe
   *             

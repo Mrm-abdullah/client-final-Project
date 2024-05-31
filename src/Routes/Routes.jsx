@@ -17,6 +17,8 @@ import Payment from "../Pages/Dashboard/Payment/Payment";
 import Dashboard from "../Layout/Dashboard";
 import AllUsers from "../Pages/Dashboard/AllUsers/AllUsers";
 import PaymentHistory from "../Pages/Dashboard/Payment/PaymentHistory/PaymentHistory";
+import UserHome from "../Pages/Dashboard/UserHome/UserHome";
+import AdminHome from "../Pages/Dashboard/AdminHome/AdminHome";
 
 export const router = createBrowserRouter([
     {
@@ -55,6 +57,10 @@ export const router = createBrowserRouter([
       element: <PrivateRoutes><Dashboard></Dashboard></PrivateRoutes>,
       children: [
         {
+          path: 'userHome',
+          element: <UserHome></UserHome>
+        },
+        {
           path: 'cart',
           element: <Cart></Cart>
         },
@@ -68,6 +74,10 @@ export const router = createBrowserRouter([
         },
 
         // admin only routes
+        {
+          path: 'adminHome',
+          element: <AdminRoute><AdminHome></AdminHome></AdminRoute>
+        },
         {
           path: 'addItems',
           element: <AdminRoute> <AddItems></AddItems> </AdminRoute>
