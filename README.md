@@ -93,9 +93,16 @@
   require('dotenv').config()
   const port = process.env.PORT || 5000;
 
-  // middleware
-  app.use(cors())
-  app.use(express.json());
+// middleware
+app.use(cors({
+    origin: [
+      "http://localhost:5173",
+      "https://project-final-27f39.web.app",
+      "https://project-final-27f39.firebaseapp.com",
+    ],
+    credentials: true,
+  }))
+app.use(express.json());
 
   3. package.json
   "scripts": {
@@ -140,6 +147,7 @@
   -------------------
   Server Deployment steps
   --------------------------
+  *  https://web.programming-hero.com/web-9/video/web-9-61-9-must-watch-update-your-server-deployment-process-in-vercel-part-1
   *  https://github.com/ferdouszihad/car-doctor-deployment
 
   * https://vercel.com/docs/cli

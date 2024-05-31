@@ -15,11 +15,11 @@ const Register = () => {
     const navigate = useNavigate();
 
     const onSubmit = data => {
-        console.log(data);
+        // console.log(data);
         handleCreateUser(data.email, data.password)
             .then(result => {
                 const loggedUser = result.user;
-                console.log(loggedUser);
+                // console.log(loggedUser);
                 updateUserProfile(data.name, data.photoURL)
                     .then(() => {
                         // create user entry in the database
@@ -30,7 +30,7 @@ const Register = () => {
                         axiosPublic.post('/users', userInfo)
                             .then(res => {
                                 if (res.data.insertedId) {
-                                    console.log('user added to the database')
+                                    // console.log('user added to the database')
                                     reset();
                                     Swal.fire({
                                         position: 'top-end',
@@ -44,7 +44,7 @@ const Register = () => {
                             })
 
                     })
-                    .catch(error => console.log(error))
+                    .catch(error => // console.log(error))
             })
     };
 
